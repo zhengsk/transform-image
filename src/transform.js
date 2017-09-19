@@ -1,11 +1,12 @@
 // https://github.com/NodeSite/canvas-test/tree/master/src/Funny-demo/transform
+import matrix from './utils/matrix';
 
 function transformImage(options) {
     var opts = {
         width: 1000,
         height: 1000,
-        imageSrc: './img/1-1.png',
-        maskSrc: './img/shoes-mask-01.png',
+        imageSrc: '',
+        maskSrc: '',
         points: null, // 默认位置
         extend: 2, // 扩展三角形，处理缝隙问题
         hasDrag: true, // 开启拖拽
@@ -23,7 +24,8 @@ function transformImage(options) {
     canvas.width = opts.width;
     canvas.height = opts.height;
 
-    var dots, dotscopy, idots;
+    var dots = opts.points,
+        dotscopy, idots;
 
     if (!opts.imageSrc) {
         return canvas;
@@ -45,12 +47,14 @@ function transformImage(options) {
         img.width = img_w;
         img.height = img_h;
 
-        dots = [
-            { x: left, y: top },
-            { x: left + img_w, y: top },
-            { x: left + img_w, y: top + img_h },
-            { x: left, y: top + img_h }
-        ];
+        if (!opts.points || !opts.points.length) {
+            dots = opts.points = [
+                { x: left, y: top },
+                { x: left + img_w, y: top },
+                { x: left + img_w, y: top + img_h },
+                { x: left, y: top + img_h }
+            ];
+        }
 
         //保存一份不变的拷贝
         dotscopy = [
@@ -170,8 +174,8 @@ function transformImage(options) {
             var idot3 = idots[i + count + 2];
             var idot4 = idots[i + count + 1];
 
-            // ctx.globalAlpha = 0.8;
-            ctx.globalCompositeOperation = 'source-atop';
+            ctx.globalAlpha = 0.8;
+            // ctx.globalCompositeOperation = 'source-atop';
             if (dot2 && dot3 && i % (count + 1) < count) {
                 //绘制三角形的下半部分
                 renderImage(idot3, dot3, idot2, dot2, idot4, dot4);
@@ -179,8 +183,8 @@ function transformImage(options) {
                 //绘制三角形的上半部分
                 renderImage(idot1, dot1, idot2, dot2, idot4, dot4, true);
             }
-            ctx.globalCompositeOperation = 'source-over';
-            // ctx.globalAlpha = 1;
+            // ctx.globalCompositeOperation = 'source-over';
+            ctx.globalAlpha = 1;
 
             // 显示圆点
             if (opts.hasDot) {
@@ -294,11 +298,19 @@ function transformImage(options) {
         ctx = null;
     }
 
+    /**
+     * getPoints
+     */
+    function getPoints() {
+        return dots;
+    }
+
     return {
-        canvas: canvas,
-        options: opts,
+        canvas,
+        destroy,
+        getPoints,
         reRender: render,
-        destroy: destroy,
+        options: opts,
     };
 };
 
