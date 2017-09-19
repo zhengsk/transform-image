@@ -2,7 +2,7 @@
     "name": "transform-image",
     "version": "1.0.0",
     "description": "",
-    "main": "transform.js",
+    "main": "dist/main.js",
     "scripts": {
         "dev": "webpack-dev-server --open",
         "build": "webpack"
