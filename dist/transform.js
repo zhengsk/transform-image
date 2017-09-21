@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 39);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1049,48 +1049,6 @@ exports.default = {
     equation: equation
 };
 
-/***/ }),
-/* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _transform = __webpack_require__(9);
-
-var _transform2 = _interopRequireDefault(_transform);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var image = __webpack_require__(40);
-var mask = __webpack_require__(41);
-
-window.transform = (0, _transform2.default)({
-    imageSrc: image,
-    maskSrc: mask,
-    points: null, // 默认位置
-    extend: 2, // 扩展三角形，处理缝隙问题
-    hasDrag: true, // 开启拖拽
-    hasDot: true, // 显示点
-    hasRect: true, // 显示方格
-    hasPic: true, // 显示图片
-    count: 10 // 等分割数量
-});
-
-document.body.appendChild(transform.canvas);
-
-/***/ }),
-/* 40 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "./assets/82d6651dbb8fa4b7aa4ec21230ed2acb.png";
-
-/***/ }),
-/* 41 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "./assets/d6becf21401fcc3cf79feaf1a20b5bc6.png";
-
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.js.map
+//# sourceMappingURL=transform.js.map

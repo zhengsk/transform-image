@@ -2,7 +2,7 @@
     "name": "transform-image",
     "version": "1.0.1",
     "description": "Canvas to transform image.",
-    "main": "dist/main.js",
+    "main": "dist/transform.js",
     "scripts": {
         "dev": "webpack-dev-server --open",
         "build": "webpack"
