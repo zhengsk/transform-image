@@ -6,7 +6,6 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
     entry: {
         main: './src/index.js',
-        transform: './src/transform.js',
     },
 
     output: {
