@@ -1,13 +1,13 @@
 import transformImage from './transform.js';
 
 const image = require('./img/template-02.png');
-const mask = require('./img/shoes-03-mask.png');
+const mask = require('./img/mask-02.png');
 
 window.transform = transformImage({
     imageSrc: image,
     maskSrc: mask,
     points: [
-        { x: -92, y: 123 },
+        { x: 0, y: 0 },
         { x: 892, y: 92 },
         { x: 863, y: 977 },
         { x: 26, y: 862 },
