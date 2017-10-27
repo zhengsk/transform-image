@@ -1,0 +1,48 @@
+{
+            "plates": [{
+                "plate": "http://qn-us.fenglinghudong.com/editor-shoes/3/plate-01.png",
+                "plateColor": null,
+                "template": null,
+                "url": null
+            }, {
+                "plate": "http://qn-us.fenglinghudong.com/editor-shoes/3/plate-02.png",
+                "template": null,
+                "plateColor": null,
+                "url": null
+            }],
+            "rendering": [{
+                "mask": [{
+                    "plate": 0,
+                    "points": [{"x":170,"y":118},{"x":693,"y":176},{"x":678,"y":614},{"x":240,"y":602}],
+                    "url": "http://qn-us.fenglinghudong.com/editor-shoes/3/mask-01-01.png"
+                }, {
+                    "plate": 1,
+                    "points": [{"x":194,"y":444},{"x":997,"y":355},{"x":808,"y":965},{"x":311,"y":975}],
+                    "url": "http://qn-us.fenglinghudong.com/editor-shoes/3/mask-01-02.png"
+                }],
+                "picture": "http://qn-us.fenglinghudong.com/editor-shoes/3/shoes-01.png"
+            }, {
+                "mask": [{
+                    "plate": 0,
+                    "points": [{"x":54,"y":199},{"x":762,"y":257},{"x":741,"y":851},{"x":154,"y":835}],
+                    "url": "http://qn-us.fenglinghudong.com/editor-shoes/3/mask-02.png"
+                }],
+                "picture": "http://qn-us.fenglinghudong.com/editor-shoes/3/shoes-02.png"
+            }, {
+                "mask": [{
+                    "plate": 1,
+                    "points": [{"x":206,"y":161},{"x":969,"y":121},{"x":846,"y":723},{"x":226,"y":812}],
+                    "url": "http://qn-us.fenglinghudong.com/editor-shoes/3/mask-03.png"
+                }],
+                "picture": "http://qn-us.fenglinghudong.com/editor-shoes/3/shoes-03.png"
+            }, {
+                "mask": [{
+                    "plate": 1,
+                    "points": [{"x":424,"y":316},{"x":894,"y":103},{"x":759,"y":657},{"x":396,"y":1037}],
+                    "url": "http://qn-us.fenglinghudong.com/editor-shoes/3/mask-04.png"
+                }],
+                "picture": "http://qn-us.fenglinghudong.com/editor-shoes/3/shoes-04.png"
+            }],
+            "version": 1,
+            "plateColor": "#FF0000"
+        }

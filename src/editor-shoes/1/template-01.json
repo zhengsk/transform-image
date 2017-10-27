@@ -1,0 +1,109 @@
+{
+    "plates": [{
+        "plate": "http://qn-us.fenglinghudong.com/editor-shoes/1/plate-01.png",
+        "plateColor": null,
+        "template": null,
+        "url": null
+    }, {
+        "plate": "http://qn-us.fenglinghudong.com/editor-shoes/1/plate-02.png",
+        "template": null,
+        "plateColor": null,
+        "url": null
+    }],
+    "rendering": [{
+        "mask": [{
+            "plate": 0,
+            "points": [{
+                "x": 264,
+                "y": -6
+            }, {
+                "x": 865,
+                "y": 83
+            }, {
+                "x": 752,
+                "y": 549
+            }, {
+                "x": 210,
+                "y": 462
+            }],
+            "url": "http://qn-us.fenglinghudong.com/editor-shoes/1/mask-04-01.png"
+        }, {
+            "plate": 1,
+            "points": [{
+                "x": -72,
+                "y": 236
+            }, {
+                "x": 875,
+                "y": 219
+            }, {
+                "x": 860,
+                "y": 801
+            }, {
+                "x": 192,
+                "y": 962
+            }],
+            "url": "http://qn-us.fenglinghudong.com/editor-shoes/1/mask-04-02.png"
+        }],
+        "picture": "http://qn-us.fenglinghudong.com/editor-shoes/1/shoes-04.png"
+    }, {
+        "mask": [{
+            "plate": 1,
+            "points": [{
+                "x": -88,
+                "y": 112
+            }, {
+                "x": 913,
+                "y": 73
+            }, {
+                "x": 820,
+                "y": 697
+            }, {
+                "x": 228,
+                "y": 830
+            }],
+            "url": "http://qn-us.fenglinghudong.com/editor-shoes/1/mask-01.png"
+        }],
+        "picture": "http://qn-us.fenglinghudong.com/editor-shoes/1/shoes-01.png"
+    }, {
+        "mask": [{
+            "plate": 1,
+            "points": [{
+                "x": -104,
+                "y": 82
+            }, {
+                "x": 1025,
+                "y": -93
+            }, {
+                "x": 844,
+                "y": 683
+            }, {
+                "x": 398,
+                "y": 1188
+            }],
+            "url": "http://qn-us.fenglinghudong.com/editor-shoes/1/mask-02.png"
+        }],
+
+        "picture": "http://qn-us.fenglinghudong.com/editor-shoes/1/shoes-02.png"
+    }, {
+        "mask": [{
+            "plate": 0,
+            "points": [{
+                "x": 172,
+                "y": -18
+            }, {
+                "x": 1033,
+                "y": -9
+            }, {
+                "x": 882,
+                "y": 855
+            }, {
+                "x": 76,
+                "y": 718
+            }],
+            "url": "http://qn-us.fenglinghudong.com/editor-shoes/1/mask-03.png"
+        }],
+        "picture": "http://qn-us.fenglinghudong.com/editor-shoes/1/shoes-03.png"
+    }],
+    "version": 1,
+    "plateColor": "#FF0000"
+}
