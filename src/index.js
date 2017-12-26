@@ -1,12 +1,12 @@
 import transformImage from './transform.js';
 
-// const image = require('http://qn-us.fenglinghudong.com/editor-shoes/1/plate-02.png');
-// const mask = require('http://qn-us.fenglinghudong.com/editor-shoes/1/mask-02.png');
+const image = require('./editor-shoes/5/plate-02.png');
+const mask = require('./editor-shoes/5/mask-01-02.png');
 
 window.transform = transformImage({
-    imageSrc: 'http://qn-us.fenglinghudong.com/editor-shoes/3/plate-02.png',
-    maskSrc: 'http://qn-us.fenglinghudong.com/editor-shoes/3/mask-03.png',
-    points: [{"x":-88,"y":112},{"x":913,"y":73},{"x":820,"y":697},{"x":228,"y":830}], // 默认位置
+    imageSrc: image, //'http://qn-us.fenglinghudong.com/editor-shoes/5/plate-03.png',
+    maskSrc: mask, //'http://qn-us.fenglinghudong.com/editor-shoes/5/mask-01-03.png',
+    points: [{"x":97,"y":618},{"x":654,"y":373},{"x":831,"y":854},{"x":192,"y":947}], // 默认位置
     extend: 2, // 扩展三角形，处理缝隙问题
     hasDrag: true, // 开启拖拽∏
     hasDot: true, // 显示点
